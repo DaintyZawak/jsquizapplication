@@ -145,11 +145,9 @@ continue_btn.onclick = ()=>{
     que_count = 0;
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
-<<<<<<< HEAD
-    showQuestions(que_count); //calling showQestions function
-=======
-    showQuetions(que_count); //calling showQestions function
->>>>>>> cbbd90ce52c7520de458b860d44424e76894fdce
+
+    showQuestions(que_count); //calling showQuestions function
+    showQuestions(que_count); //calling showQuestions function
     queCounter(1); //passing 1 parameter to queCounter
     startTimer(15); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
@@ -192,7 +190,7 @@ next_btn.onclick = ()=>{
     if(que_count < questions.length - 1){ //if question count is less than total question length
         que_count++; //increment the que_count value
         que_numb++; //increment the que_numb value
-        showQuestions(que_count); //calling showQestions function
+        showQuestions(que_count); //calling showQuestions function
         queCounter(que_numb); //passing que_numb value to queCounter
         clearInterval(counter); //clear counter
         clearInterval(counterLine); //clear counterLine
