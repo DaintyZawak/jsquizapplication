@@ -145,7 +145,11 @@ continue_btn.onclick = ()=>{
     que_count = 0;
     info_box.classList.remove("activeInfo"); //hide info box
     quiz_box.classList.add("activeQuiz"); //show quiz box
+<<<<<<< HEAD
     showQuestions(que_count); //calling showQestions function
+=======
+    showQuetions(que_count); //calling showQestions function
+>>>>>>> cbbd90ce52c7520de458b860d44424e76894fdce
     queCounter(1); //passing 1 parameter to queCounter
     startTimer(15); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
