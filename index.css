@@ -156,6 +156,14 @@ body{
     height: 3px;
     background: #23903c;
 }
+
+.timeline{
+    height: 3px;
+    background: #23903c;
+    width: 350px;
+    display: none;
+} 
+
 section{
     padding: 25px 30px 20px 30px;
     background: #fff;
@@ -229,7 +237,7 @@ section .option_list .option .icon{
     margin: 5px;
 }
 footer{
-    height: 60px;
+    height: 70px;
     padding: 0 30px;
     display: flex;
     align-items: center;
@@ -338,4 +346,97 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #00ff62;
+}
+
+@media only screen and (max-width: 480px)  {
+    footer button{
+        height: 30px;
+        padding: 0 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .start_btn button{
+        font-size: 24px;
+        font-weight: 500;
+        color:#23903c;
+        padding: 10px;
+        width: 150px;
+        height: 70px;
+        border: 2px;
+        border-radius: 10px;
+        cursor: pointer;
+    
+    }
+
+    .info_box{
+        width: 350px;
+        font-size: 12px;
+        background: #fff;
+        border-radius: 5px;
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .quiz_box{
+        width: 350px;
+        background: #fff;
+        border-radius: 5px;
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .quiz_box header .title{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .quiz_box header .time_line{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 3px;
+        background: #23903c;
+        display: none;
+    }
+
+    .timeline{
+        height: 3px;
+        background: #23903c;
+        width: 350px;
+        display: block;
+    } 
+
+    section .que_text{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    footer{
+        height: 120px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid lightgrey;
+    }
+
+    .result_box{
+        background: #fff;
+        border-radius: 5px;
+        display: flex;
+        padding: 25px 30px;
+        width: 300px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(-50%, -50%) scale(0.9);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
 }
