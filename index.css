@@ -164,7 +164,7 @@ body{
     display: none;
 } 
 
-section{
+section {
     padding: 25px 30px 20px 30px;
     background: #fff;
 }
@@ -350,9 +350,10 @@ footer button.show{
 
 @media only screen and (max-width: 480px)  {
     footer button{
-        height: 30px;
+        height: 40px;
+        line-height: 10px;
         padding: 0 10px;
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
     }
 
@@ -364,6 +365,7 @@ footer button.show{
         width: 150px;
         height: 70px;
         border: 2px;
+        border-color: #23903c;
         border-radius: 10px;
         cursor: pointer;
     
@@ -438,5 +440,11 @@ footer button.show{
         opacity: 0;
         pointer-events: none;
         transition: all 0.3s ease;
+    }
+
+    .quiz_box header .timer .time_left_txt{
+        font-weight: 400;
+        font-size: 12px;
+        user-select: none;
     }
 }
